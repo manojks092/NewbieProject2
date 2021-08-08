@@ -13,8 +13,6 @@ html {
     --darkcyan : rgb(0, 105, 112);
     --verydarkcyan :rgb(0, 66, 65);
 }
-
-
 .orange {
     background-color: var(--orange);
 }
@@ -22,69 +20,79 @@ html {
 .darkcyan {
     background-color: var(--darkcyan);
 }
+
 .verydarkcyan {
     background-color: var(--verydarkcyan);
 }
 
-.verydarkcyan button{
-    color: var(--verydarkcyan);
-}
-.darkcyan button{
-    color: var(--darkcyan);
-}
-.orange button{
-    color: var(--orange);
+.content-section {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 img {
     width: 50px;
 }
 
-.heading, .description {
-    margin-top: 10px;
-    color: hsla(0, 0%, 100%, 0.75);
-}
-
 .heading {
+    color: rgb(242, 242, 242);
     font-family: 'Big Shoulders Display', cursive;
+    margin-top: 8px;
 }
 
 .description {
+    color: rgba(255, 255, 255, 0.75);
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 12px;
+    font-size: 1rem;
+    margin-top: 8px;
 }
 
-
-.wrapper>button {
-    padding: 8px;
-    border-radius: 36px;
-    border: none;
+button {
     width: 120px;
-    margin-top: 15px;
+    padding: 8px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    border: none;
+    border-radius: 36px;
 }
 
-.wrapper {
-    width: 70%;
-    margin: auto;
-}
 
 @media screen and (min-width:768px) {
-
-    main {
-        margin-top: 10%;
-    }
     .container {
-        display: flex;
+        width: 80%;
+        margin: auto;
+        display:flex;
+        margin-top: 5%;
+        height: 450px;
     }
 
-    .wrapper {
+    .orange {
+        border-radius: 2% 0 0 2%;
+    }
+
+    .verydarkcyan {
+        border-radius: 0 2% 2% 0;
+    }
+
+    .content-section {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        padding-top: 50px;
     }
 
-    .content-section .wrapper{
-        height: 100%;
+    .heading {
+        padding-top: 8%;
+        font-size: 30px;
+    }
+
+    
+    .description {
+        height: 50%;
+        line-height: 1rem;
+        margin-top: 15px;
+    }
+    
+    .button {
+        margin-top: 0;
     }
 }
